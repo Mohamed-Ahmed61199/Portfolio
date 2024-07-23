@@ -177,7 +177,9 @@ header {
     border-radius:var(--border-radius);
 }
 .me img {
-    height: 150px;
+    min-width: 100px;
+    width:100%;
+    max-width: 150px;
     border-radius: 50%;
 }
 
