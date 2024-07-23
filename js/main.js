@@ -5,14 +5,15 @@ const sections = document.querySelectorAll('section');
 
 
 function header() {
+    //when click in showcontact add show class to info
+    showContact.addEventListener('click', (e) => {
+        inf.classList.toggle('show');
+    });
     //when your are in width more than 1200px add show class to info
     if (window.innerWidth  > 1200 ) {
         inf.classList.add('show');
     } else if (window.innerWidth < 1200) {
         inf.classList.remove('show');
-        showContact.addEventListener('click', (e) => {
-            inf.classList.toggle('show');
-        });
     }
 }
 // add (active) class to navigation links and (show) class to its section
