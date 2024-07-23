@@ -176,19 +176,24 @@ header {
     background-color: var(--black3-color);
     border-radius:var(--border-radius);
 }
+
 .me img {
     min-width: 100px;
     width:100%;
     max-width: 150px;
     border-radius: 50%;
 }
-
+.me h2{
+    margin-bottom:0;
+}
 .me .my-jop {
     background-color: var(--black3-color);
     padding:5px 18px;
     border-radius: var(--border-radius);
     width: fit-content;
-    margin-top: var(--small-margin)
+    margin-top: var(--small-margin);
+    white-space: nowrap;
+    text-transform: capitalize;
 }
 
 .me .btn::after{
@@ -269,7 +274,7 @@ header {
         text-align: center;
     }
     .me .my-jop{
-        margin:0 auto;
+        margin-inline: auto;
     }
     .me .btn::after{
         display:none;
@@ -397,13 +402,13 @@ header {
 /* End about me */
 /* start resume  */
 .resume .educ{
-    margin:var(--big-margin);
+    margin-left:var(--big-margin);
+    margin-bottom:var(--big-margin)
     
 }
 
 .resume .educ > div{
     position: relative;
-    padding-inline: var(--big-padding);
     padding-left:3em;
     padding-bottom:var(--big-padding);
     border-left:var(--border)
@@ -465,20 +470,22 @@ header {
     appearance: none;
   }
   progress[value]::-webkit-progress-bar {
-    background-color: #eee;
+    background-color: var(--lgray-color);
     border-radius: 2px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   }
   progress[value]::-webkit-progress-value {
-    background: linear-gradient(to right top,#f803036c, rgb(157, 255, 0));  }
+    background: linear-gradient(to right top,rgba(0, 215, 230, 0.582),rgba(0, 255, 13, 0.349) );  }
 
 /* End resume  */
 /* start portfolio */
 .portfolio .grid-box{
-    display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
-    gap:var(--big-margin);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--big-margin);
     align-items: center;
+    align-items: stretch;
+    justify-content: space-between;
 }
 .portfolio .grid-box > div{
     cursor: pointer;
@@ -521,6 +528,11 @@ header {
 .portfolio .grid-box > div .subtilte{
     text-transform: capitalize;
     color: var(--lgray-color);
+}
+@media (min-width:992px){
+    .portfolio .grid-box{
+        grid-template-columns: repeat(auto-fill, minmax(44%, 1fr));
+    }
 }
 /* End portfolio */
 /* start contact */
