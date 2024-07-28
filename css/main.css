@@ -487,27 +487,28 @@ header {
     align-items: stretch;
     justify-content: space-between;
 }
-.portfolio .grid-box > div{
+.portfolio .grid-box a {
     cursor: pointer;
+    text-decoration: none;
 }
-.portfolio .grid-box > div figure{
+.portfolio .grid-box a > div figure{
     background-color:var(--lgray-color);
     border:5px;
     position: relative;
     border-radius:var(--border-radius);
 }
-.portfolio .grid-box > div figure img{
+.portfolio .grid-box a > div figure img{
    height:300px;
    width:100%;
     transform:scale(0.9);
 }
-.portfolio .grid-box > div figure img:hover{
+.portfolio .grid-box a > div figure img:hover{
     filter: brightness(0.3);
     transition: var(--transition);
     transform:scale(1);
     border-radius:var(--border-radius)
 }
-.portfolio .grid-box > div figure i{
+.portfolio .grid-box a > div figure i{
     position:absolute;
     top:50%;
     left:50%;
@@ -518,14 +519,15 @@ header {
     padding:1em;
     font-size:1rem;
 }
-.portfolio .grid-box > div figure:hover i{
+.portfolio .grid-box a > div figure:hover i{
     display:block
 }
 
-.portfolio .grid-box > div h4{
-    margin-block:var(--small-margin)
+.portfolio .grid-box a > div h4{
+    margin-block:var(--small-margin);
+    color:white;
 }
-.portfolio .grid-box > div .subtilte{
+.portfolio .grid-box a > div .subtilte{
     text-transform: capitalize;
     color: var(--lgray-color);
 }
