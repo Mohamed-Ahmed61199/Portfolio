@@ -4,7 +4,7 @@
 [View the live demo here](https://mohamed99-ahmed.github.io/Portfolio/)
 
 ## Description
-Make A Nice Desighn of portfolio 
+Make A Nice Desighn of portfolio  
 
 ## Technologies Used
 1. HTML
